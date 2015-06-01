@@ -11,7 +11,11 @@ require_once("header.php"); ?>
 <section class="monitoring">
     
     <!-- Acciones y recordatorios en lote : mag-form = monitoring action group form-->
-    <form action="" name="mag-form" id="mag-form" class="mag-form form-group form">
+    <form action="process.php" name="mag-form" id="mag-form" class="mag-form form-group form" method="post">
+        
+        <!-- Bandera para saber si el formulario fué enviado -->
+        <input type="hidden" name="form-name" value="mag-form">
+
         <!-- Lista de acciones : col 1 -->        
         <div class="dropdown action-list">
             <button name="action-list" id="action-list" class="btn dropdown-toggle btn-primary" type="button" data-toggle="dropdown">
@@ -57,9 +61,9 @@ require_once("header.php"); ?>
         <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck">
+            <div class="lcheck" for="checkbox1">
                 <!-- check -->
-                <input name="" value="" type="checkbox" class="check" form="mag-form">
+                <input name="checkbox1" id="checkbox1" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
                 <p class="name">Alejandro Sobrevilla Viveros</p>
             </div>
@@ -103,9 +107,9 @@ require_once("header.php"); ?>
         <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck">
+            <div class="lcheck" for="checkbox2">
                 <!-- check -->
-                <input name="" value="" type="checkbox" class="check" form="mag-form">
+                <input name="checkbox2" id="checkbox2" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
                 <p class="name">Alejandro Sobrevilla Viveros</p>
             </div>
@@ -135,21 +139,21 @@ require_once("header.php"); ?>
                 <!-- Agregar recordatorio -->
                 <a href="#" class="action"><i class="fa fa-calendar"></i></a>
                 <!-- Editar datos del prospecto -->
-                <a href="#" class="action"><i class="fa fa-user"></i></a>
+                <a href="#" class="action a-user"><i class="fa fa-user"></i></a>
                 <!-- Consultar historial -->
                 <a href="#" class="action"><i class="fa fa-clock-o"></i></a>
                 <!-- Eliminar prospecto -->
-                <a href="#" class="action"><i class="fa fa-close"></i></a>
+                <a href="#" class="action a-close"><i class="fa fa-close"></i></a>
                 <!-- Cambiar prioridad -->
                 <a href="#" class="action"><i class="fa fa-circle"></i></a>
             </aside>
         </div>
-               <div id="" class="lead">
+                <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck">
+            <div class="lcheck" for="checkbox3">
                 <!-- check -->
-                <input name="" value="" type="checkbox" class="check" form="mag-form">
+                <input name="checkbox3" id="checkbox3" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
                 <p class="name">Alejandro Sobrevilla Viveros</p>
             </div>
@@ -179,21 +183,21 @@ require_once("header.php"); ?>
                 <!-- Agregar recordatorio -->
                 <a href="#" class="action"><i class="fa fa-calendar"></i></a>
                 <!-- Editar datos del prospecto -->
-                <a href="#" class="action"><i class="fa fa-user"></i></a>
+                <a href="#" class="action a-user"><i class="fa fa-user"></i></a>
                 <!-- Consultar historial -->
                 <a href="#" class="action"><i class="fa fa-clock-o"></i></a>
                 <!-- Eliminar prospecto -->
-                <a href="#" class="action"><i class="fa fa-close"></i></a>
+                <a href="#" class="action a-close"><i class="fa fa-close"></i></a>
                 <!-- Cambiar prioridad -->
                 <a href="#" class="action"><i class="fa fa-circle"></i></a>
             </aside>
         </div>
-               <div id="" class="lead">
+                <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck">
+            <div class="lcheck" for="checkbox4">
                 <!-- check -->
-                <input name="" value="" type="checkbox" class="check" form="mag-form">
+                <input name="checkbox4" id="checkbox4" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
                 <p class="name">Alejandro Sobrevilla Viveros</p>
             </div>
@@ -223,21 +227,21 @@ require_once("header.php"); ?>
                 <!-- Agregar recordatorio -->
                 <a href="#" class="action"><i class="fa fa-calendar"></i></a>
                 <!-- Editar datos del prospecto -->
-                <a href="#" class="action"><i class="fa fa-user"></i></a>
+                <a href="#" class="action a-user"><i class="fa fa-user"></i></a>
                 <!-- Consultar historial -->
                 <a href="#" class="action"><i class="fa fa-clock-o"></i></a>
                 <!-- Eliminar prospecto -->
-                <a href="#" class="action"><i class="fa fa-close"></i></a>
+                <a href="#" class="action a-close"><i class="fa fa-close"></i></a>
                 <!-- Cambiar prioridad -->
                 <a href="#" class="action"><i class="fa fa-circle"></i></a>
             </aside>
         </div>
-               <div id="" class="lead">
+                <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck">
+            <div class="lcheck" for="checkbox5">
                 <!-- check -->
-                <input name="" value="" type="checkbox" class="check" form="mag-form">
+                <input name="checkbox5" id="checkbox5" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
                 <p class="name">Alejandro Sobrevilla Viveros</p>
             </div>
@@ -267,21 +271,21 @@ require_once("header.php"); ?>
                 <!-- Agregar recordatorio -->
                 <a href="#" class="action"><i class="fa fa-calendar"></i></a>
                 <!-- Editar datos del prospecto -->
-                <a href="#" class="action"><i class="fa fa-user"></i></a>
+                <a href="#" class="action a-user"><i class="fa fa-user"></i></a>
                 <!-- Consultar historial -->
                 <a href="#" class="action"><i class="fa fa-clock-o"></i></a>
                 <!-- Eliminar prospecto -->
-                <a href="#" class="action"><i class="fa fa-close"></i></a>
+                <a href="#" class="action a-close"><i class="fa fa-close"></i></a>
                 <!-- Cambiar prioridad -->
                 <a href="#" class="action"><i class="fa fa-circle"></i></a>
             </aside>
         </div>
-               <div id="" class="lead">
+                <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck">
+            <div class="lcheck" for="checkbox6">
                 <!-- check -->
-                <input name="" value="" type="checkbox" class="check" form="mag-form">
+                <input name="checkbox6" id="checkbox6" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
                 <p class="name">Alejandro Sobrevilla Viveros</p>
             </div>
@@ -311,11 +315,99 @@ require_once("header.php"); ?>
                 <!-- Agregar recordatorio -->
                 <a href="#" class="action"><i class="fa fa-calendar"></i></a>
                 <!-- Editar datos del prospecto -->
-                <a href="#" class="action"><i class="fa fa-user"></i></a>
+                <a href="#" class="action a-user"><i class="fa fa-user"></i></a>
                 <!-- Consultar historial -->
                 <a href="#" class="action"><i class="fa fa-clock-o"></i></a>
                 <!-- Eliminar prospecto -->
-                <a href="#" class="action"><i class="fa fa-close"></i></a>
+                <a href="#" class="action a-close"><i class="fa fa-close"></i></a>
+                <!-- Cambiar prioridad -->
+                <a href="#" class="action"><i class="fa fa-circle"></i></a>
+            </aside>
+        </div>
+                <div id="" class="lead">
+
+            <!-- Checkbox & Nombre -->
+            <div class="lcheck" for="checkbox7">
+                <!-- check -->
+                <input name="checkbox7" id="checkbox7" value="1" type="checkbox" class="check" form="mag-form">
+                <!-- Nombre -->
+                <p class="name">Alejandro Sobrevilla Viveros</p>
+            </div>
+            <!-- Estatus actual -->
+            <p class="status">
+                <span class="date-status">13 feb</span>
+                Se ha enviado el correo de inicio de cursos
+            </p>
+            <!-- Recordatorio y sugerencia -->
+            <p class="reminder">
+                <span class="date-reminder">18 feb</span>
+                enviar correo de seguimiento
+            </p>
+            <aside class="actions">
+                <!-- Enviar correo -->
+                <a href="#" class="action" ><i class="fa fa-send"></i></a>
+                <!-- Realizar llamada -->
+                <a href="#" class="action"><i class="fa fa-phone"></i></a>
+                <!-- Agregar nota personalizada -->
+                <a href="#" class="action"><i class="fa fa-file-text"></i></a>
+                <!-- Inscripción a Musinetwork -->
+                <a href="#" class="action"><i class="fa fa-university"></i></a>
+                <!-- Reservar para futuros ciclos -->
+                <a href="#" class="action"><i class="fa fa-recycle"></i></a>
+                <!-- Enviar a lista general -->
+                <a href="#" class="action"><i class="fa fa-list"></i></a>
+                <!-- Agregar recordatorio -->
+                <a href="#" class="action"><i class="fa fa-calendar"></i></a>
+                <!-- Editar datos del prospecto -->
+                <a href="#" class="action a-user"><i class="fa fa-user"></i></a>
+                <!-- Consultar historial -->
+                <a href="#" class="action"><i class="fa fa-clock-o"></i></a>
+                <!-- Eliminar prospecto -->
+                <a href="#" class="action a-close"><i class="fa fa-close"></i></a>
+                <!-- Cambiar prioridad -->
+                <a href="#" class="action"><i class="fa fa-circle"></i></a>
+            </aside>
+        </div>
+                <div id="" class="lead">
+
+            <!-- Checkbox & Nombre -->
+            <div class="lcheck" for="checkbox8">
+                <!-- check -->
+                <input name="checkbox8" id="checkbox8" value="1" type="checkbox" class="check" form="mag-form">
+                <!-- Nombre -->
+                <p class="name">Alejandro Sobrevilla Viveros</p>
+            </div>
+            <!-- Estatus actual -->
+            <p class="status">
+                <span class="date-status">13 feb</span>
+                Se ha enviado el correo de inicio de cursos
+            </p>
+            <!-- Recordatorio y sugerencia -->
+            <p class="reminder">
+                <span class="date-reminder">18 feb</span>
+                enviar correo de seguimiento
+            </p>
+            <aside class="actions">
+                <!-- Enviar correo -->
+                <a href="#" class="action" ><i class="fa fa-send"></i></a>
+                <!-- Realizar llamada -->
+                <a href="#" class="action"><i class="fa fa-phone"></i></a>
+                <!-- Agregar nota personalizada -->
+                <a href="#" class="action"><i class="fa fa-file-text"></i></a>
+                <!-- Inscripción a Musinetwork -->
+                <a href="#" class="action"><i class="fa fa-university"></i></a>
+                <!-- Reservar para futuros ciclos -->
+                <a href="#" class="action"><i class="fa fa-recycle"></i></a>
+                <!-- Enviar a lista general -->
+                <a href="#" class="action"><i class="fa fa-list"></i></a>
+                <!-- Agregar recordatorio -->
+                <a href="#" class="action"><i class="fa fa-calendar"></i></a>
+                <!-- Editar datos del prospecto -->
+                <a href="#" class="action a-user"><i class="fa fa-user"></i></a>
+                <!-- Consultar historial -->
+                <a href="#" class="action"><i class="fa fa-clock-o"></i></a>
+                <!-- Eliminar prospecto -->
+                <a href="#" class="action a-close"><i class="fa fa-close"></i></a>
                 <!-- Cambiar prioridad -->
                 <a href="#" class="action"><i class="fa fa-circle"></i></a>
             </aside>
@@ -326,7 +418,7 @@ require_once("header.php"); ?>
 
 </section>
     
-    
+
 <?php 
 require_once("footer.php"); ?>    
 
