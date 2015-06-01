@@ -1,0 +1,31 @@
+/*------------------------------------------------*/
+/*------------------[FORMS]----------------------*/
+/*------------------------------------------------*/
+.form {
+	
+	.btn-primary.btn-fill {
+		color: $primary-color-text;
+		background: $accent-color;
+		border: none;
+		border-bottom: .15rem solid $primary-color;
+		@include rounded( .5rem );
+
+		&:hover {
+			border-bottom: .15rem solid $primary-color-dark;
+			background: $primary-color;
+		}
+	}
+	.btn-primary {
+		color: $primary-color;
+		border-color: $primary-color;
+	}
+	/* botón abierto cuando es select */
+	.open .btn-primary {
+		color: $primary-color;
+		border-color: $accent-color;
+	}
+	/* Color del icono cuando está dentro de un input text*/
+	.input-group-addon .fa {
+		color: $divider-color;
+	}
+}
