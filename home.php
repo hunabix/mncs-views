@@ -61,7 +61,7 @@ require_once("header.php"); ?>
         <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck" for="checkbox1">
+            <div class="lcheck checkbox" for="checkbox1">
                 <!-- check -->
                 <input name="checkbox1" id="checkbox1" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
@@ -107,7 +107,7 @@ require_once("header.php"); ?>
         <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck" for="checkbox2">
+            <div class="lcheck checkbox" for="checkbox2">
                 <!-- check -->
                 <input name="checkbox2" id="checkbox2" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
@@ -151,7 +151,7 @@ require_once("header.php"); ?>
                 <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck" for="checkbox3">
+            <div class="lcheck checkbox" for="checkbox3">
                 <!-- check -->
                 <input name="checkbox3" id="checkbox3" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
@@ -195,7 +195,7 @@ require_once("header.php"); ?>
                 <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck" for="checkbox4">
+            <div class="lcheck checkbox" for="checkbox4">
                 <!-- check -->
                 <input name="checkbox4" id="checkbox4" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
@@ -239,7 +239,7 @@ require_once("header.php"); ?>
                 <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck" for="checkbox5">
+            <div class="lcheck checkbox" for="checkbox5">
                 <!-- check -->
                 <input name="checkbox5" id="checkbox5" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
@@ -283,7 +283,7 @@ require_once("header.php"); ?>
                 <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck" for="checkbox6">
+            <div class="lcheck checkbox" for="checkbox6">
                 <!-- check -->
                 <input name="checkbox6" id="checkbox6" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
@@ -327,7 +327,7 @@ require_once("header.php"); ?>
                 <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck" for="checkbox7">
+            <div class="lcheck checkbox" for="checkbox7">
                 <!-- check -->
                 <input name="checkbox7" id="checkbox7" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
@@ -371,7 +371,7 @@ require_once("header.php"); ?>
                 <div id="" class="lead">
 
             <!-- Checkbox & Nombre -->
-            <div class="lcheck" for="checkbox8">
+            <div class="lcheck checkbox" for="checkbox8">
                 <!-- check -->
                 <input name="checkbox8" id="checkbox8" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
