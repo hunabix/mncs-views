@@ -1,11 +1,17 @@
+// $(window).load(function () {
+//     $('.check').attr('checked', false);
+//     $('.checkbox').removeClass('checked');
+// });
 
-// $(':checkbox').checkbox();
-
-// Función que pemite marcar multiples checkbox usando s
-var lastChecked = null;
 
 $(document).ready(function() {
-    var $chkboxes = $('.check');
+
+    // Activa los fancy checkbox de Creative Tim
+    $(':checkbox').checkbox();
+
+    // Función que pemite marcar multiples checkbox usando shift
+    var lastChecked = null;
+    var $chkboxes = $('.checkbox');
     $chkboxes.click(function(e) {
         if(!lastChecked) {
             lastChecked = this;
@@ -16,12 +22,20 @@ $(document).ready(function() {
             var start = $chkboxes.index(this);
             var end = $chkboxes.index(lastChecked);
 
-            $chkboxes.slice(Math.min(start,end), Math.max(start,end)+ 1).prop('checked', lastChecked.checked);
-
+            $chkboxes.slice(Math.min(start,end), Math.max(start,end)+ 1).addClass('checked', lastChecked.checked);
         }
-
         lastChecked = this;
     });
+
+    // Selecciona los checkboxes que tienen la clase checked
+    $( "#mag-form" ).submit(function( event ) {
+      $('.checked .check').attr('checked', true);
+    }); 
 });        
 
+
+
+
+
+  
 
