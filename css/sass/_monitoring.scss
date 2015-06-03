@@ -3,16 +3,17 @@
 /*------------------------------------------------*/
 
 .monitoring {
-	padding: 0 1.5rem 2rem;	
-	
+	padding: 0 1.5rem 2rem;
+
+	// Formulario de acciones y recordatorios en lote mag-form = monitoring action group form
 	.mag-form {
 		display: inline-block;
 		width: 100%;
-		
-		.action-list, 
+
+		.action-list,
 		.mag-date,
 		.mag-reminder,
-		.mag-reminder-btn {			
+		.mag-reminder-btn {
 			padding-bottom: 1rem;
 			max-width: 200px;
 			float: left;
@@ -39,83 +40,103 @@
 		.mag-date {	max-width: 160px;	}
 		.mag-reminder {	max-width: 300px;	}
 	}
+	// Botón para deseleccionar todos los checkboxes
+	.uncheck-all {
+		color: #fefefe;
+		padding: 0px 0.2rem 0px 0.5rem;
+		font-size: 1.25rem;
+		@include anim(.25s);
+		text-decoration: none;
 
+		&:hover {
+			color:$divider-color;
+		}
+	}
+	// Lista de prospectos
 	.leads {
-			
 
+		// Titulos
 		.titles {
 			border-bottom: 1px solid $divider-color;
 
 			h4 {
-				padding: .5rem;
+				padding: .5rem .5rem .5rem 0;
 				margin: 0;
 				@include inline-box;
 				font-size: 1rem;
 			}
-			.lt-name { 
-				width: 21%; 
+			.lt-name {
+				width: 21%;
 
 				@media (max-width: 1350px) { width: 20%; }
 				@media (max-width: 1300px) { width: 25%; }
 				@media (max-width: 800px) { width: 100%; }
 			}
-			.lt-status { 
-				width: 22%;
-
-				@media (max-width: 1350px) { width: 22%; } 
-				@media (max-width: 1300px) { width: 36%; }
-				@media (max-width: 800px) { display: none; }
-			}
-			.lt-reminder { 
+			.lt-status {
 				width: 22%;
 
 				@media (max-width: 1350px) { width: 22%; }
 				@media (max-width: 1300px) { width: 36%; }
 				@media (max-width: 800px) { display: none; }
 			}
-			.lt-actions { 
+			.lt-reminder {
+				width: 22%;
+
+				@media (max-width: 1350px) { width: 22%; }
+				@media (max-width: 1300px) { width: 36%; }
+				@media (max-width: 800px) { display: none; }
+			}
+			.lt-actions {
 				width: 33%;
 
 				@media (max-width: 1350px) { width: 33%; }
 				@media (max-width: 1300px) { display: none; }
 			}
 		}
+
+		// Prospectos
 		.lead {
-			
+
 			width: 100%;
 			border-bottom: $divider-color 1px dotted;
 			margin: 0;
 			display: inline-block;
-			
+
 			&:hover {
 				background: #efefef;
 			}
-			
 			p {
 				@media (max-width: 1000px) { margin: 0; }
-			}
-			.lcheck,
-			.status, 
-			.reminder, 
-			.actions {
-				@include inline-box;
-				padding: .75rem .5rem .25rem;
 			}
 			.date-status,
 			.date-reminder {
 				font-weight: 600;
 				font-size: .8rem;
 				padding-right: .5rem;
-				color: #666; 
+				color: #666;
 			}
-			.lcheck {
+			.checkbox {
+				@include inline-box;
+				padding: .75rem .5rem .25rem;
 				width: 20%;
-				
+				margin: 0;
+
+				&.checked {
+					color: $primary-color;
+
+					.second-icon { color: $primary-color }
+				}
+
 				@media (max-width: 1350px) { width: 20%; }
 				@media (max-width: 1300px) { width: 25%; }
 				@media (max-width: 800px) { width: 100%; }
 
+				.icons {
+					@include inline-box;
+					position: relative;
+				}
 				.check {
+
 				}
 				.name {
 					@include inline-box;
@@ -124,14 +145,18 @@
 				}
 			}
 			.status {
+				@include inline-box;
+				padding: .75rem .5rem .25rem;
 				width: 22%;
 				font-size: .9rem;
-				
+
 				@media (max-width: 1350px) { width: 22%; }
 				@media (max-width: 1300px) { width: 36%; }
 				@media (max-width: 800px) { width: 100%; }
 			}
 			.reminder {
+				@include inline-box;
+				padding: .75rem .5rem .25rem;
 				width: 22%;
 				font-size: .9rem;
 
@@ -140,21 +165,23 @@
 				@media (max-width: 800px) { width: 100%; }
 			}
 			.actions {
+				@include inline-box;
+				padding: .75rem .5rem .25rem;
 				width: 33%;
 
 				@media (max-width: 1350px) { width: 33%; }
 				@media (max-width: 1300px) { width: 420px; float: right; }
 				@media (max-width: 800px) { float: left; max-width: 500px; }
-				
+
 				.action {
 					color: #888;
 					padding: 0 .35rem;
 					@include rounded(.5rem);
 					text-align: center;
-					font-size: 21px;					
+					font-size: 21px;
 
 					&:hover {
-						color: $primary-color-text;	
+						color: $primary-color-text;
 						background: $accent-color;
 					}
 					&:hover.a-user {

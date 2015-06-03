@@ -1,20 +1,33 @@
-* commit f452e2c61d3b052a73ce6c71c67cad90f5bd92a6
-| Author: Alejandro Sobrevilla <hunabix@gmail.com>
-| Date:   Tue Jun 2 19:35:17 2015 -0500
-| 
-|     Se ajustáron los fancycheckbox con la seleccion multiple con shift
-|  
-* commit c3fb55c29d9a41be613edeb6868ffa962b6efcd0
-| Author: Alejandro Sobrevilla <alejandro@sobrevilla.mx>
-| Date:   Tue Jun 2 07:17:25 2015 -0500
-| 
-|     Agregué algunos scripts para probar impresión de clases en elementos
-|  
-* commit 064404afc926f0a5e5735d5638f61e6d8c636901
-| Author: Alejandro Sobrevilla <hunabix@gmail.com>
-| Date:   Mon Jun 1 13:22:17 2015 -0500
-| 
-|     Test de recibimiento de datos de checkbox
+*   commit 1487053e71c11ebf6f59be635adbbee44f58b3b8
+|\  Merge: e423de0 f452e2c
+| | Author: Alejandro Sobrevilla <alejandro@sobrevilla.mx>
+| | Date:   Tue Jun 2 08:07:50 2015 -0500
+| | 
+| |     fusion de fancychecks
+| |   
+| * commit f452e2c61d3b052a73ce6c71c67cad90f5bd92a6
+| | Author: Alejandro Sobrevilla <hunabix@gmail.com>
+| | Date:   Tue Jun 2 19:35:17 2015 -0500
+| | 
+| |     Se ajustáron los fancycheckbox con la seleccion multiple con shift
+| |   
+| * commit c3fb55c29d9a41be613edeb6868ffa962b6efcd0
+| | Author: Alejandro Sobrevilla <alejandro@sobrevilla.mx>
+| | Date:   Tue Jun 2 07:17:25 2015 -0500
+| | 
+| |     Agregué algunos scripts para probar impresión de clases en elementos
+| |   
+| * commit 064404afc926f0a5e5735d5638f61e6d8c636901
+| | Author: Alejandro Sobrevilla <hunabix@gmail.com>
+| | Date:   Mon Jun 1 13:22:17 2015 -0500
+| | 
+| |     Test de recibimiento de datos de checkbox
+| |   
+* | commit e423de0e855c4bfec9554339733c6134f0e39a54
+|/  Author: Alejandro Sobrevilla <alejandro@sobrevilla.mx>
+|   Date:   Tue Jun 2 07:50:07 2015 -0500
+|   
+|       Modifiqué muyy pocas cosas
 |  
 * commit 2e30079ad30bd530a9b2e5cf1de4246357cc1155
   Author: Alejandro Sobrevilla <hunabix@gmail.com>

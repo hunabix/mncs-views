@@ -1,10 +1,5 @@
-// $(window).load(function () {
-//     $('.check').attr('checked', false);
-//     $('.checkbox').removeClass('checked');
-// });
-
-
 $(document).ready(function() {
+
 
     // Activa los fancy checkbox de Creative Tim
     $(':checkbox').checkbox();
@@ -31,6 +26,12 @@ $(document).ready(function() {
     $( "#mag-form" ).submit(function( event ) {
       $('.checked .check').attr('checked', true);
     }); 
+
+    $( "#uncheck-all" ).click(function() {
+      $(':checkbox').checkbox('uncheck');
+    });
+
+
 });        
 
 

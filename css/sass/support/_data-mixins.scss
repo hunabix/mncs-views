@@ -46,11 +46,11 @@ $smaller-width: 500px;
   border-radius: $radius;
 }
 
-@mixin transicion($tiempo: 0.5s) {
+@mixin anim($tiempo: 0.5s) {
 	-webkit-transition: all $tiempo ease-in-out;
 	   -moz-transition: all $tiempo ease-in-out;
 		 -o-transition: all $tiempo ease-in-out;
-		    transition: all $tiempo ease-in-out; 
+		    transition: all $tiempo ease-in-out;
 }
 
 @mixin fancy-box-shadow {
@@ -80,6 +80,3 @@ $smaller-width: 500px;
 @function em($px, $base: $base-font-size) {
     @return ($px / $base) * 1em;
 }
-
-
-
