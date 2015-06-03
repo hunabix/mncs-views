@@ -63,9 +63,10 @@ require_once("header.php"); ?>
             <!-- Checkbox & Nombre -->
             <div class="lcheck checkbox" for="checkbox1">
                 <!-- check -->
+                <label class="name">
                 <input name="checkbox1" id="checkbox1" value="1" type="checkbox" class="check" form="mag-form">
                 <!-- Nombre -->
-                <p class="name">Alejandro Sobrevilla Viveros</p>
+                Alejandro Sobrevilla Viveros</label>
             </div>
             <!-- Estatus actual -->
             <p class="status">
