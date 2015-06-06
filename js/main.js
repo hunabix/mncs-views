@@ -11,15 +11,21 @@ $('#mag-date').datepicker({
 
 /* LEADS
 --------------------------------------------- */
+// Muestra los iconos correspondientes al cargar o recargar la página
+$("input:checked + .check-icon").addClass('fa-check-square-o');
+$("input:checked + .check-icon").removeClass('fa-square-o');
+$("input:not(:checked) + .check-icon").addClass('fa-square-o');
+$("input:not(:checked) + .check-icon").removeClass('fa-check-square-o');
 
 // Activo script para multiple selección de checkboxs en #leads
 $(function() {
     $('#leads').tshift();
 });
+
 // Script del boton para deseleccionar todos los checkboxs de #leads
 $( "#uncheck-all" ).click(function( event ) {
     event.preventDefault();
-    $('.lead-check').prop('checked', false); // Unchecks it
+    $('.check').prop('checked', false); // Unchecks it
     $("input:not(:checked) + .check-icon").addClass('fa-square-o');
     $("input:not(:checked) + .check-icon").removeClass('fa-check-square-o');
 });

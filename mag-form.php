@@ -29,7 +29,7 @@
         <span class="input-group-addon"><i class="fa fa-file-o"></i></span>
     </div>
         <!-- Botón aplicar recordatorio col: 4 -->  
-    <div class="input-group mag-reminder-btn">         
+    <div class="mag-reminder-btn">         
         <button type="submit" name="mag-reminder-btn" class="btn btn-primary btn-fill">Programar</button>
     </div>
 </form>

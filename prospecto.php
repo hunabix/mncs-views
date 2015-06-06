@@ -1,16 +1,18 @@
 
 <!-- Prospecto -->
 
-<div id="lead-<?= $i; ?>" class="lead">
+<div id="lead-<?= $i; ?>" class="lead form">
 
     <!-- Checkbox & Nombre -->
     <div class="lead-name" for="checkbox-<?= $i; ?>">
         <!-- check -->
-        <label class="name">
-            <input name="checkbox-<?= $i; ?>" id="checkbox-<?= $i; ?>" value="1" type="checkbox" class="lead-check" form="mag-form">
+        <label class="fancy-check">
+            <input name="checkbox-<?= $i; ?>" id="checkbox-<?= $i; ?>" value="1" type="checkbox" class="check" form="mag-form">
             <span class="fa fa-square-o check-icon"></span>
             <!-- Nombre -->
-            Alejandro Sobrevilla Viveros <?= $i; ?>
+            <span class="name">
+                Alejandro Sobrevilla Viveros <?= $i; ?>
+            </span>
         </label>
     </div>
     <!-- Estatus actual -->
