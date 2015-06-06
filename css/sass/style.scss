@@ -12,11 +12,8 @@ Version: 2.0
 @import "support/_font-awesome.scss";
 @import "support/_fonts.scss";
 @import "support/_animate.scss";
-/* Get SH IT Done Kit
-------------------------------------------*/
-@import "support/gsdk/_gsdk-base.scss";
-@import "support/gsdk/_gsdk-checkbox-radio-switch.scss";
-@import "support/gsdk/_gsdk-sliders.scss";
+@import "support/_bootstrap-datepicker.scss";
+
 /* Project styles
 ------------------------------------------*/
 @import "base.scss";

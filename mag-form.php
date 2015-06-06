@@ -1,7 +1,7 @@
 <!-- Acciones y recordatorios en lote : mag-form = monitoring action group form-->
-<form action="process.php" name="mag-form" id="mag-form" class="mag-form form-group form" method="post">
+<form action="process.php" name="mag-form" id="mag-form" class="mag-form form" method="post">
     
-    <!-- Bandera para saber si el formulario fué enviado -->
+    <!-- Campo para saber si el formulario fué enviado -->
     <input type="hidden" name="form-name" value="mag-form">
 
     <!-- Lista de acciones : col 1 -->        
@@ -19,7 +19,7 @@
         </ul>
     </div>    
     <!-- Selector de fecha : col 2-->
-    <div class="input-group mag-date">
+    <div class="input-group mag-date ">
        <input name="mag-date" type="text" id="mag-date" class="form-control"  placeholder="dd/mm/aaaa" value="">
        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
     </div>
