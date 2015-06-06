@@ -4,12 +4,14 @@
 <div id="lead-<?= $i; ?>" class="lead">
 
     <!-- Checkbox & Nombre -->
-    <div class="checkbox" for="checkbox-<?= $i; ?>">
+    <div class="lead-name" for="checkbox-<?= $i; ?>">
         <!-- check -->
         <label class="name">
-        <input name="checkbox-<?= $i; ?>" id="checkbox-<?= $i; ?>" value="1" type="checkbox" class="check" form="mag-form">
-        <!-- Nombre -->
-        Alejandro Sobrevilla Viveros <?= $i; ?></label>
+            <input name="checkbox-<?= $i; ?>" id="checkbox-<?= $i; ?>" value="1" type="checkbox" class="lead-check" form="mag-form">
+            <span class="fa fa-square-o check-icon"></span>
+            <!-- Nombre -->
+            Alejandro Sobrevilla Viveros <?= $i; ?>
+        </label>
     </div>
     <!-- Estatus actual -->
     <p class="status">

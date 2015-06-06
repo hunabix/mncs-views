@@ -115,17 +115,12 @@
 				padding-right: .5rem;
 				color: #666;
 			}
-			.checkbox {
+			.lead-name {
 				@include inline-box;
 				padding: .75rem .5rem .25rem;
 				width: 20%;
 				margin: 0;
-
-				&.checked {
-					color: $primary-color;
-
-					.second-icon { color: $primary-color }
-				}
+				position: relative;
 
 				@media (max-width: 1350px) { width: 20%; }
 				@media (max-width: 1300px) { width: 25%; }
@@ -135,9 +130,19 @@
 					@include inline-box;
 					position: relative;
 				}
-				.check {
-
+				// La clase del checkbox
+				.lead-check {
+					z-index: 9;
+					position: relative;
+					opacity: 0;
 				}
+				// El icono que sustituye la apariencia del checkbox
+				.check-icon {
+					position: relative;
+					z-index: 0;
+					left: -1rem;
+				}
+
 				.name {
 					@include inline-box;
 					font-weight: 400;
