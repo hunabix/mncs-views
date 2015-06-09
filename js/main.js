@@ -40,3 +40,25 @@ $('input[type=checkbox]').change(function(){
     $("input:not(:checked) + .check-icon").addClass('fa-square-o');
     $("input:not(:checked) + .check-icon").removeClass('fa-check-square-o');
 });
+
+/* AJAX
+------------------------------- */
+
+$( document ).ajaxStart(function() {
+    $( ".loading" ).css( "display", "block" );              
+});
+$( document ).ajaxComplete(function() {
+    $( ".loading" ).css( "display", "none" );                   
+});
+
+
+$("#formulario").on("submit", function(e){
+    e.preventDefault();
+
+    $.post("process.php", $("#formulario").serialize(), function (respuesta) {
+        $('#contenido .datos').html(respuesta);
+        $('.contenido').css( "display", "block" ); 
+        $('#myModal').modal('toggle');
+    })
+});
+

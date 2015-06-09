@@ -18,6 +18,7 @@
 			max-width: 200px;
 			float: left;
 			margin-right: 1.5rem;
+			@include anim();
 
 			@media (max-width: 700px) {
 				width: 60%;
@@ -38,7 +39,20 @@
 			}
 		}
 		.mag-date {	max-width: 160px;	}
-		.mag-reminder {	max-width: 300px;	}
+		.mag-reminder {
+			max-width: 160px;
+			@include anim();
+
+			.form-control {
+				width: 130px;
+				@include anim();				
+				
+				&:focus {
+					width: 480px;
+				}
+			}
+			
+		}
 	}
 	// Botón para deseleccionar todos los checkboxes
 	.uncheck-all {
@@ -166,7 +180,7 @@
 				@include inline-box;
 				padding: .75rem .5rem .25rem;
 				width: 33%;
-
+				
 				@media (max-width: 1350px) { width: 33%; }
 				@media (max-width: 1300px) { width: 420px; float: right; }
 				@media (max-width: 800px) { float: left; max-width: 500px; }
@@ -181,6 +195,7 @@
 					&:hover {
 						color: $primary-color-text;
 						background: $accent-color;
+						text-decoration: none;
 					}
 					&:hover.a-user {
 						background: #FF9500;

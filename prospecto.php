@@ -7,7 +7,7 @@
     <div class="lead-name" for="checkbox-<?= $i; ?>">
         <!-- check -->
         <label class="fancy-check">
-            <input name="checkbox-<?= $i; ?>" id="checkbox-<?= $i; ?>" value="1" type="checkbox" class="check" form="mag-form">
+            <input name="checkbox-<?= $i; ?>" id="checkbox-<?= $i; ?>" value="<?= $i; ?>" type="checkbox" class="check" form="mag-form">
             <span class="fa fa-square-o check-icon"></span>
             <!-- Nombre -->
             <span class="name">
@@ -32,7 +32,9 @@
         <!-- Realizar llamada -->
         <a href="#" class="action"><i class="fa fa-phone"></i></a>
         <!-- Agregar nota personalizada -->
-        <a href="#" class="action"><i class="fa fa-file-text"></i></a>
+        <a href="" id="action-nota" class="action" data-toggle="modal" data-target="#lead-modal">
+            <i class="fa fa-file-text"></i>
+        </a>
         <!-- Inscripción a Musinetwork -->
         <a href="#" class="action"><i class="fa fa-university"></i></a>
         <!-- Reservar para futuros ciclos -->
@@ -51,3 +53,4 @@
         <a href="#" class="action"><i class="fa fa-circle"></i></a>
     </aside>
 </div>
+

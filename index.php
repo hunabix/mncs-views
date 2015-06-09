@@ -16,7 +16,13 @@ require_once("header.php"); ?>
 
 
     <!-- Lista de prospectos -->
-    <section id="leads" class="leads">
+    <form id="leads" name="leads-form" class="leads" action="process.php" method="POST">
+        
+        <!-- Campo para saber si el formulario fué enviado -->
+        <input type="hidden" name="form-name" value="leads-form">
+
+        
+
         <!-- Encabezado -->
         <header class="titles">
             <h4 class="lt-name">
@@ -37,12 +43,17 @@ require_once("header.php"); ?>
             <?php require("prospecto.php");  ?>
 
         <?php } ?>
+        
+        <!-- Modal -->
+        <?php require("modal.php");  ?>
 
-
-    </section>
+    </form>
 
 </section>
 
+<div class="u-loading">
+    <img src="img/loader.gif" alt="Cargando...">
+</div>
 
 <?php
 require_once("footer.php"); ?>
