@@ -41,6 +41,26 @@ $('input[type=checkbox]').change(function(){
     $("input:not(:checked) + .check-icon").removeClass('fa-check-square-o');
 });
 
+
+/* Acciones del lead
+------------------------------- */
+// Obtengo el ID del lead
+$( ".nota" ).click(function() {
+
+
+    var leadId = $(this).attr('id');
+    var leadTipoAccion = $(this).attr('tipo-accion');
+
+    var modal = $('#modal-multi');
+
+    modal.find( "#lead-id" ).val( leadId );
+    modal.find( "#tipo-accion" ).val( leadTipoAccion );
+    modal.find( "#titulo-modal-regular").html('Agregar nota personalizada');
+
+});
+
+
+
 /* AJAX
 ------------------------------- */
 
@@ -61,4 +81,8 @@ $("#formulario").on("submit", function(e){
         $('#myModal').modal('toggle');
     })
 });
+
+
+
+
 

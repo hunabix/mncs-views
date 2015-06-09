@@ -14,14 +14,11 @@ require_once("header.php"); ?>
         mag-form = monitoring action group form-->
     <?php require_once("mag-form.php");  ?>
 
-
     <!-- Lista de prospectos -->
     <form id="leads" name="leads-form" class="leads" action="process.php" method="POST">
         
         <!-- Campo para saber si el formulario fué enviado -->
         <input type="hidden" name="form-name" value="leads-form">
-
-        
 
         <!-- Encabezado -->
         <header class="titles">
@@ -44,8 +41,8 @@ require_once("header.php"); ?>
 
         <?php } ?>
         
-        <!-- Modal -->
-        <?php require("modal.php");  ?>
+        <!-- Modales -->
+        <?php require("modal-multi.php");  ?>
 
     </form>
 

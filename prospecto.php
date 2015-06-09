@@ -32,7 +32,7 @@
         <!-- Realizar llamada -->
         <a href="#" class="action"><i class="fa fa-phone"></i></a>
         <!-- Agregar nota personalizada -->
-        <a href="" id="action-nota" class="action" data-toggle="modal" data-target="#lead-modal">
+        <a href="#" id="<?= $i; ?>" class="action nota" data-toggle="modal" data-target="#modal-multi" tipo-accion="nota">
             <i class="fa fa-file-text"></i>
         </a>
         <!-- Inscripción a Musinetwork -->
