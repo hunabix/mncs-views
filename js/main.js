@@ -44,22 +44,39 @@ $('input[type=checkbox]').change(function(){
 
 /* Acciones del lead
 ------------------------------- */
-// Obtengo el ID del lead
+
 $( ".nota" ).click(function() {
-
-
-    var leadId = $(this).attr('id');
+    var leadId = $(this).closest('.lead').attr('id');
     var leadTipoAccion = $(this).attr('tipo-accion');
-
     var modal = $('#modal-multi');
-
     modal.find( "#lead-id" ).val( leadId );
     modal.find( "#tipo-accion" ).val( leadTipoAccion );
     modal.find( "#titulo-modal-regular").html('Agregar nota personalizada');
-
 });
-
-
+$( ".llamada" ).click(function() {
+    var leadId = $(this).closest('.lead').attr('id');
+    var leadTipoAccion = $(this).attr('tipo-accion');
+    var modal = $('#modal-multi');
+    modal.find( "#lead-id" ).val( leadId );
+    modal.find( "#tipo-accion" ).val( leadTipoAccion );
+    modal.find( "#titulo-modal-regular").html('Registrar llamada');
+});
+$( ".inscripcion" ).click(function() {
+    var leadId = $(this).closest('.lead').attr('id');
+    var leadTipoAccion = $(this).attr('tipo-accion');
+    var modal = $('#modal-multi');
+    modal.find( "#lead-id" ).val( leadId );
+    modal.find( "#tipo-accion" ).val( leadTipoAccion );
+    modal.find( "#titulo-modal-regular").html('Inscribir a Musinetwork');
+});
+$( ".lista" ).click(function() {
+    var leadId = $(this).closest('.lead').attr('id');
+    var leadTipoAccion = $(this).attr('tipo-accion');
+    var modal = $('#modal-multi');
+    modal.find( "#lead-id" ).val( leadId );
+    modal.find( "#tipo-accion" ).val( leadTipoAccion );
+    modal.find( "#titulo-modal-regular").html('Enviar a lista general');
+});
 
 /* AJAX
 ------------------------------- */

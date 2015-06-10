@@ -15,7 +15,7 @@ require_once("header.php"); ?>
     <?php require_once("mag-form.php");  ?>
 
     <!-- Lista de prospectos -->
-    <form id="leads" name="leads-form" class="leads" action="process.php" method="POST">
+    <form id="leads" name="leads-form" class="leads form" action="process.php" method="POST">
         
         <!-- Campo para saber si el formulario fué enviado -->
         <input type="hidden" name="form-name" value="leads-form">

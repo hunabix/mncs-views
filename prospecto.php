@@ -1,7 +1,7 @@
 
 <!-- Prospecto -->
 
-<div id="lead-<?= $i; ?>" class="lead form">
+<div id="<?= $i; ?>" class="lead form">
 
     <!-- Checkbox & Nombre -->
     <div class="lead-name" for="checkbox-<?= $i; ?>">
@@ -30,19 +30,17 @@
         <!-- Enviar correo -->
         <a href="#" class="action" ><i class="fa fa-send"></i></a>
         <!-- Realizar llamada -->
-        <a href="#" class="action"><i class="fa fa-phone"></i></a>
+        <a href="#"  class="action llamada" data-toggle="modal" data-target="#modal-multi" tipo-accion="llamada"><i class="fa fa-phone"></i></a>
         <!-- Agregar nota personalizada -->
-        <a href="#" id="<?= $i; ?>" class="action nota" data-toggle="modal" data-target="#modal-multi" tipo-accion="nota">
-            <i class="fa fa-file-text"></i>
-        </a>
+        <a href="#" class="action nota" data-toggle="modal" data-target="#modal-multi" tipo-accion="nota"><i class="fa fa-file-text"></i></a>
         <!-- Inscripción a Musinetwork -->
-        <a href="#" class="action"><i class="fa fa-university"></i></a>
+        <a href="#" class="action inscripcion" data-toggle="modal" data-target="#modal-multi" tipo-accion="inscripcion"><i class="fa fa-university"></i></a>
         <!-- Reservar para futuros ciclos -->
         <a href="#" class="action"><i class="fa fa-recycle"></i></a>
         <!-- Enviar a lista general -->
-        <a href="#" class="action"><i class="fa fa-list"></i></a>
+        <a href="#" class="action lista" data-toggle="modal" data-target="#modal-multi" tipo-accion="lista"><i class="fa fa-list"></i></a>
         <!-- Agregar recordatorio -->
-        <a href="#" class="action"><i class="fa fa-calendar"></i></a>
+        <a href="#" class="action"></i></a>
         <!-- Editar datos del prospecto -->
         <a href="#" class="action a-user"><i class="fa fa-user"></i></a>
         <!-- Consultar historial -->

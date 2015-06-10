@@ -8,7 +8,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="titulo-modal-regular">
-                    
+                    <!-- Aquí se imprime el título -->
                 </h4>
             </div>
             <!-- Cuerpo del modal  -->
@@ -17,10 +17,9 @@
                 <!-- ID del elemento -->
                 <input id="lead-id" type="hidden" name="lead-id" value="">
                 <input id="tipo-accion" type="hidden" name="tipo-accion" value="">
-             
                 <div class="input-group">
-                   <input name="comentario" type="text-area" id="comentario" class="form-control"  placeholder="Comentario" value="">
-                   <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                   <textarea name="comentario" type="text-area" id="comentario" class="form-control"  placeholder="Puedes agregar un comentario aquí"></textarea>
+                   <span class="input-group-addon"><i class="fa fa-file-text"></i></span>
                 </div>
 
             </div>
