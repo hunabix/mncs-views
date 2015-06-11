@@ -4,6 +4,17 @@
  **/
 require_once("header.php"); ?>
 
+
+<!-- Muestreo de variables [PRUEBAS]
+================================================== --> 
+<div id="trace-block" class="contenido alert alert-warning alert-dismissible fade in" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <p class="datos">&nbsp;</p>
+</div>
+<!-- Muestreo de variables [PRUEBAS]
+================================================== --> 
+
+
 <!-- Titulo -->
 <h2 class="section-title">Casos de seguimiento</h2>
 
@@ -15,7 +26,7 @@ require_once("header.php"); ?>
     <?php require_once("mag-form.php");  ?>
 
     <!-- Lista de prospectos -->
-    <form id="leads" name="leads-form" class="leads form" action="process.php" method="POST">
+    <form id="leads-form" name="leads-form" class="leads form" action="process.php">
         
         <!-- Campo para saber si el formulario fué enviado -->
         <input type="hidden" name="form-name" value="leads-form">
@@ -35,7 +46,7 @@ require_once("header.php"); ?>
 
         <!-- Lista de prospectos -->
 
-        <?php for ($i = 1; $i <= 10; $i++) { ?>
+        <?php for ($i = 1; $i <= 20; $i++) { ?>
 
             <?php require("prospecto.php");  ?>
 

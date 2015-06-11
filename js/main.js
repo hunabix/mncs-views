@@ -19,7 +19,7 @@ $("input:not(:checked) + .check-icon").removeClass('fa-check-square-o');
 
 // Activo script para multiple selección de checkboxs en #leads
 $(function() {
-    $('#leads').tshift();
+    $('#leads-form').tshift();
 });
 
 // Script del boton para deseleccionar todos los checkboxs de #leads
@@ -89,13 +89,13 @@ $( document ).ajaxComplete(function() {
 });
 
 
-$("#formulario").on("submit", function(e){
+$("#leads-form").on("submit", function(e){
     e.preventDefault();
 
-    $.post("process.php", $("#formulario").serialize(), function (respuesta) {
-        $('#contenido .datos').html(respuesta);
+    $.post("process.php", $("#leads-form").serialize(), function (respuesta) {
+        $('#trace-block .datos').html(respuesta);
         $('.contenido').css( "display", "block" ); 
-        $('#myModal').modal('toggle');
+        $('#modal-multi').modal('toggle');
     })
 });
 

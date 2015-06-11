@@ -2,6 +2,7 @@
 if (isset($_POST['form-name'])) {
 
 	$nombreFormulario = $_POST['form-name'];
+	
 	echo '<h2>Llego por el formulario '. $nombreFormulario . '</h2>';
 
 	// Impresión de parametros para testing
