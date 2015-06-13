@@ -2,7 +2,7 @@
 /**
  * Plantilla [home]
  **/
-require_once("header.php"); ?>
+require_once("part/header.php"); ?>
 
 
 <!-- Muestreo de variables [PRUEBAS]
@@ -23,10 +23,10 @@ require_once("header.php"); ?>
 
     <!-- Formulario de acciones y recordatorios en lote
         mag-form = monitoring action group form-->
-    <?php require_once("mag-form.php");  ?>
+    <?php require_once("part/mag-form.php");  ?>
 
     <!-- Lista de prospectos -->
-    <form id="leads-form" name="leads-form" class="leads form" action="process.php">
+    <form id="leads-form" name="leads-form" class="leads form" action="part/process.php">
         
         <!-- Campo para saber si el formulario fué enviado -->
         <input type="hidden" name="form-name" value="leads-form">
@@ -48,12 +48,12 @@ require_once("header.php"); ?>
 
         <?php for ($i = 1; $i <= 20; $i++) { ?>
 
-            <?php require("prospecto.php");  ?>
+            <?php require("part/prospecto.php");  ?>
 
         <?php } ?>
         
         <!-- Modales -->
-        <?php require("modal-multi.php");  ?>
+        <?php require("part/modal-multi.php");  ?>
 
     </form>
 
@@ -64,4 +64,4 @@ require_once("header.php"); ?>
 </div>
 
 <?php
-require_once("footer.php"); ?>
+require_once("part/footer.php"); ?>

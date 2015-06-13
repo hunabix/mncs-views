@@ -92,7 +92,7 @@ $( document ).ajaxComplete(function() {
 $("#leads-form").on("submit", function(e){
     e.preventDefault();
 
-    $.post("process.php", $("#leads-form").serialize(), function (respuesta) {
+    $.post("part/process.php", $("#leads-form").serialize(), function (respuesta) {
         $('#trace-block .datos').html(respuesta);
         $('.contenido').css( "display", "block" ); 
         $('#modal-multi').modal('toggle');
